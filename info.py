@@ -34,7 +34,7 @@ if len(BOT_TOKEN) == 0:
 PORT = int(environ.get('PORT', '80'))
 
 # Bot pics
-PICS = (environ.get('PICS', 'https://telegra.ph/file/58fef5cb458d5b29b0186.jpg https://telegra.ph/file/f0aa4f433132769f8970c.jpg https://telegra.ph/file/f515fbc2084592eca60a5.jpg https://telegra.ph/file/20dbdcffaa89bd3d09a74.jpg https://telegra.ph/file/6045ba953af4def846238.jpg')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/13bbf4a411424eb1f8ce6-e5c60121916780f3d1.jpg https://graph.org/file/3d2bfc69d2a1e26f9ef5f-6eb2318e11122dc85e.jpg https://graph.org/file/c2837bb5a316d8b0be597-6e0ab7d18c7f093e95.jpg https://graph.org/file/44aa275a74b66f49dd89a-0e6f68f4c4c17324b9.jpg https://graph.org/file/2d8f962f58dc8bd011d1c-e8894bdb097425bfd7.jpg https://graph.org/file/464ea06eedd5ae57c8a15-b206e584827283cade.jpg https://graph.org/file/5b72670588ec3033f81b4-782920b916401b0c32.jpg')).split()
 
 # Bot Admins
 ADMINS = environ.get('ADMINS', '5560200410')
@@ -74,10 +74,10 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 # Links
 SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/supp0rt_group')
 OWNER_USERNAME = environ.get("OWNER_USERNAME", "https://t.me/Mr_mark_tate")
-UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/Tatemovie_bot')
-FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/Tate_movie_group')
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/Tatemovie_bot")
-VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/Tatemovie_bot")
+UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/+uJy29Y7MJtFhYTE1')
+FILMS_LINK = environ.get('FILMS_LINK', '')
+TUTORIAL = environ.get("TUTORIAL", "")
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "")
 
 # Bot settings
 DELETE_TIME = int(environ.get('DELETE_TIME', 3600)) # Add time in seconds
@@ -87,8 +87,8 @@ LANGUAGES = [language.lower() for language in environ.get('LANGUAGES', 'hindi en
 QUALITY = [quality.lower() for quality in environ.get('QUALITY', '360p 480p 720p 1080p 2160p').split()]
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", script.IMDB_TEMPLATE)
 FILE_CAPTION = environ.get("FILE_CAPTION", script.FILE_CAPTION)
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "mdiskshortner.link")
-SHORTLINK_API = environ.get("SHORTLINK_API", "36f1ae74ba1aa01e5bd73bdd0bc22aa915443501")
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "")
+SHORTLINK_API = environ.get("SHORTLINK_API", "")
 VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 WELCOME_TEXT = environ.get("WELCOME_TEXT", script.WELCOME_TEXT)
 INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTENSIONS', 'mp4 mkv').split()]
@@ -118,7 +118,7 @@ if len(BIN_CHANNEL) == 0:
     exit()
 else:
     BIN_CHANNEL = int(BIN_CHANNEL)
-URL = environ.get("URL", "")
+URL = environ.get("URL", "https://t.me/+tJYFbk-zrG83NmRl")
 if len(URL) == 0:
     print('Error - URL is missing, exiting now')
     exit()
